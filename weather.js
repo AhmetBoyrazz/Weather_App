@@ -14,3 +14,25 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   getWeatherDataFromApi();
 });
+
+//Api Get func. (http methods == Verbs)
+const getWeatherDataFromApi = async () => {
+  //alert("http request is gone!");
+  const tokenKey = DecryptStringAES(localStorage.getItem("tokenKey"));
+  //alert(tokenKey);
+  const inputValue = input.value;
+  const units = "metric";
+  const lang = "tr";
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputValue}&appid=${tokenKey}&units=${units}&lang=${lang}`;
+
+};
+
+
+
+//window onload
+// document.querySelector(".cities").addEventListener("click", (e) => {
+//     if (e.target.tagName == "IMG") {
+//         alert("img is clicked!!!")
+//     }
+// }
+// )
