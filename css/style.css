@@ -251,3 +251,22 @@ body {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+/* API Key banner
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.api {
+    background: #fffbbc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.api a {
+    text-decoration: underline;
+}
+
+.api a:hover {
+    text-decoration: none;
+}
